@@ -6,6 +6,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-satoshi{
+  font-family: "Satoshi-Variable"
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../src/assets/fonts/Satoshi-Variable.ttf") format("truetype");
+}
+
 .icon-32 {
   display: inline-block;
   margin-right: 5px;

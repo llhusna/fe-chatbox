@@ -20,6 +20,7 @@ import { Route, Routes } from 'react-router-dom'
 import PageIndex from 'pages'
 import PageEditor from 'pages/editor'
 import PageNft from 'pages/nft'
+import PageChatbox from 'pages/chatbox'
 import PageInventory from 'pages/inventory'
 import { ApiProvider } from 'hooks/use-api'
 import SignInModal from 'components/Modal/SignInModal'
@@ -35,6 +36,7 @@ const App = () => {
           <Route element={<MainLayout children={undefined} />}>
             <Route path="/" element={<PageIndex />} />
             <Route path="/nft" element={<PageNft />} />
+            <Route path="/chatbox" element={<PageChatbox />} />
             <Route path="/editor/:chainId/:tokenAddress/:tokenId/:version" element={<PageEditor />} />
             <Route path="/inventory" element={<PageInventory />} />
           </Route>
